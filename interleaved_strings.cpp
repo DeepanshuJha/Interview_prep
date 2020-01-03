@@ -25,7 +25,7 @@ bool check(string a, string b, string c, int i, int j, int k){
     if(dp[i][j][k] != -1) return dp[i][j][k];
     if(i == a.size() && j == b.size() && k == c.size()) return dp[i][j][k] = 1;
 
-    if(k == c.size()) return dp[i][j][k] = 0;
+    if(k == c.size()) return dp[i][j][k] = 0; // c is empty other two are not empty
 
     return dp[i][j][k] = ((a[i] == c[k] && check(a, b, c, i + 1, j, k + 1)) || (b[j] == c[k] && check(a, b, c, i, j + 1, k + 1))); 
 }
