@@ -11,7 +11,7 @@
 
             O(n^2) DP appoach
     
-    Sol - Activity Selectio Approach O(nlog(n))
+    Sol - Activity Selection Approach O(nlog(n))
 
             In this we sort the array by second value, we assume all first value as 
             start value and second value as finish value.
